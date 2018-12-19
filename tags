@@ -1,0 +1,20 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Cal_anl_main2sa_forreview_x	Cal_anl_main2sa_forreview_x.m	/^function res=Cal_anl_main2sa_forreview_x(dat,p)$/;"	f
+ScaleW	ScaleW.m	/^function [scaled, Lower, Upper, MaxV, MinV ] = ScaleW(Data, Lower, Upper, MaxV, MinV)$/;"	f
+bpass1d	bpass1d.m	/^function res = bpass1d(arr,lb,hb)$/;"	f
+bpass3d_v1	bpass3d_v1.m	/^function im3f=bpass3d_v1(im,param)$/;"	f
+bpassW	bpassW.m	/^function res = bpassW(arr,lnoise,lobject)$/;"	f
+domain_segment	domain_segment.m	/^function bw=domain_segment(bff,Areacut)$/;"	f
+estibkg	estibkg.m	/^function [bkg,rb]=estibkg(I,iter,gmode)$/;"	f
+estibkgkmean	estibkgkmean.m	/^function [bkg,rb,rg]=estibkgkmean(I,Nmode)$/;"	f
+get_bkg_int	get_bkg_int.m	/^function [bkg_int]=get_bkg_int(intout0)$/;"	f
+get_domain_int	get_domain_int.m	/^function intout=get_domain_int(im0temp,pattern)$/;"	f
+get_peak_feature	get_peak_feature.m	/^function fs=get_peak_feature(itest)$/;"	f
+get_peak_intprofile	get_peak_intprofile.m	/^function pk_int=get_peak_intprofile(pkout0,intoutf)$/;"	f
+mskcircle	mskcircle.m	/^function msk=mskcircle(sz)$/;"	f
+peak_detect_v2	peak_detect_v2.m	/^function [pkout,intoutbw]=peak_detect_v2(intout0,p)$/;"	f
