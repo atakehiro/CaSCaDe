@@ -41,4 +41,4 @@ colorbar
 title(['Segmentation Result: ', num2str(res.obnum), ' ROIs'])
 figure
 imagesc(res.intout0')
-title('trace')
+title('Trace')
