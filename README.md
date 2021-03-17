@@ -2,10 +2,12 @@
 
 ## 使い方
 Main_Code.mを開いて実行する。
+
 GUIが起動するため、解析したい画像tifファイルを開く。
 
 ## 改変場所
 Cal_anl_main2sa_forreview_x.mにおいて、res.testdata = prepSVMData(pkf);をコメントアウト
+
 get_peak_feature.mにおいて、autocorrをxcorrに変更
 
 ##
