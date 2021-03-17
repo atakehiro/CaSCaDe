@@ -1,4 +1,4 @@
-%% tif�t�@�C���̓ǂݎ��GUI
+%% tifファイルの読み取りGUI
 tic
 [file, file_path] = uigetfile('*.tif');
 file_info = imfinfo([file_path, file]);
@@ -11,10 +11,10 @@ im = zeros(d1,d2,T);
 for t = 1:T
     im(:,:,t) = imread([file_path, file], t);
 end
-disp('�f�[�^�ǂݎ�芮��')
+disp('データ読み取り完了')
 toc
 
-%% �p�����[�^�ݒ�
+%% パラメータ設定
  p.foffset=10; % how many initial frames to exclude in analysis
  p.norm_signal='std'; % ('std','bkg','sub') % different way to normalize intenisty
  p.spf=1 ; % frame rate at acquisition
@@ -31,5 +31,14 @@ toc
  p.zlb=1;% low bound size for in-z(t) dim
  p.zhb=21; % high bound size for in-z(t) dim
  
- %% �֐��ɓn��
+ %% 関数に渡す
 res=Cal_anl_main2sa_forreview_x(im, p);
+
+%% 図示
+figure
+imagesc(res.L)
+colorbar
+title(['ROIのセグメンテーション結果は', num2str(res.obnum), '個です。'])
+figure
+imagesc(res.intout0')
+title('trace')
