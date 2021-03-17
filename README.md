@@ -1,7 +1,7 @@
 # CaSCaDe
 
 ## 使い方
-Main＿Code.mを開いて実行する。
+Main_Code.mを開いて実行する。
 GUIが起動するため、解析したい画像tifファイルを開く。
 
 ##
