@@ -173,7 +173,7 @@ function res=Cal_anl_main2sa_forreview_x(dat,p)
         
     % gather features
     pkf = res.peakfeatures;
-    res.testdata = prepSVMData(pkf);
+    % res.testdata = prepSVMData(pkf);
     
     % get labels
     HW = size(dat,1)*size(dat,2);
