@@ -1,4 +1,4 @@
-%% tifファイルの読み取りGUI
+%% tifファイルの読み取り
 tic
 [file, file_path] = uigetfile('*.tif');
 file_info = imfinfo([file_path, file]);
@@ -38,7 +38,7 @@ res=Cal_anl_main2sa_forreview_x(im, p);
 figure
 imagesc(res.L)
 colorbar
-title(['ROIのセグメンテーション結果は', num2str(res.obnum), '個です。'])
+title(['Segmentation Result: ', num2str(res.obnum), 'ROIs'])
 figure
 imagesc(res.intout0')
 title('trace')
