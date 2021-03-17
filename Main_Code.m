@@ -38,7 +38,7 @@ res=Cal_anl_main2sa_forreview_x(im, p);
 figure
 imagesc(res.L)
 colorbar
-title(['Segmentation Result: ', num2str(res.obnum), 'ROIs'])
+title(['Segmentation Result: ', num2str(res.obnum), ' ROIs'])
 figure
 imagesc(res.intout0')
 title('trace')
