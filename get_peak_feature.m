@@ -12,13 +12,9 @@ function fs=get_peak_feature(itest)
     [fr,gof]=fit([1:length(itest)]',itest,'poly1');
 
     % autocorr
-%     try
-    [ACF]=autocorr(itest);
-    [ACF2]=autocorr(double(itest2));
-    [ACF3]=autocorr(double(itest3));
-%     catch
-%         keyboard
-%     end
+    [ACF]=xcorr(itest); %autocorr(itest);
+    [ACF2]=xcorr(double(itest2)); %autocorr(double(itest2));
+    [ACF3]=xcorr(double(itest3)); %autocorr(double(itest3));
     
     if isnan(ACF3)
         ACF3=0;
